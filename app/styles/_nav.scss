@@ -1,0 +1,216 @@
+
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding-top: 25px;
+  .logo {
+    display: inline-block;
+    img {
+      max-width: 200px;
+    }
+  }
+  .nav {
+    @media (min-width: 878px) {
+      margin-top: 9px;
+    }
+    li {
+      a {
+        color: $navbar-default-link-color;
+        padding: 6px 11px 4px;
+        margin-left: 4px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        transition: .2s all ease-out;
+        border-radius: 2px;
+        &:hover {
+          border-color: #fff;
+          background: none;
+        }
+      }
+      &.standout {
+        a {
+          color: $text-color;
+          background: #fff;
+          &:hover {
+            border-color: #fff;
+            background: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle {
+    margin-right: 0;
+  }
+  @media (max-width: $grid-float-breakpoint) {
+    .navbar-collapse {
+      box-shadow: none;
+      background: $brand-primary;
+      padding-bottom: 15px;
+      a {
+        font-size: 22px;
+        line-height: 2;
+        text-align: center;
+      }
+      .standout {
+        text-align: center;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &:not(.fixed)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  &.fixed {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: .4s ease-out;
+    // background: #fff;
+    background: $brand-primary;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    // @media (max-width: $grid-float-breakpoint) {
+    //   display: none;
+    // }
+    @media (max-width: $grid-float-breakpoint) {
+      .navbar {
+        margin-bottom: 0;
+      }
+    }
+    .navbar {
+      margin-bottom: 10px;
+    }
+    .nav {
+      li {
+        a {
+          // color: #333;
+        }
+      }
+    }
+    &.visible {
+      transform: translateY(0);
+    }
+  }
+}
+
+
+.navbar-toggle {
+  padding: 0;
+  margin-bottom: 0;
+  label {
+    padding: 9px 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  label {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 100;
+    cursor: pointer;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAMAAADWZboaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODhDQkFFRjg3MjgxMUUzQkE0Njg0MTE0RTI5RkQyRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODhDQkFGMDg3MjgxMUUzQkE0Njg0MTE0RTI5RkQyRCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4OENCQUVEODcyODExRTNCQTQ2ODQxMTRFMjlGRDJEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4OENCQUVFODcyODExRTNCQTQ2ODQxMTRFMjlGRDJEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+61sMJwAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAA3UlEQVR42ryX2Q7DIAwEZ///pyslPXJAsadSI+UFdsRlm4Xoj4ADYfsVSRS7jRnD7kNGsLue9NmnmrTZl5Z02beSNNmPjvTYg4q02KOGdNiTgjTYcz+ps5deUmavfaTK3npIkb23kxo7aKWkGrfV5jaaCaW9HK+hcvbjnaMQq7M9X+fW7KRZ1oJ5jKxq1zwy8fV9kSnfMol6fv5nVL9Wv8P+XH00+Rj2mePz1VcJX5t8RfR12Fd/f+f4m87fr/5W917COxjvm7xb8x7RO1Pvh70L997/hxeHfuc8BBgAWv4L2JqO2bwAAAAASUVORK5CYII=) no-repeat center center / contain;
+  }
+  nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    font-size: 36px;
+    font-size: 7vh;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    li {
+      display: block;
+      height: 20%;
+      height: calc(100% / 5);
+      min-height: 54px;
+      a {
+        font-weight: 300;
+        display: block;
+        color: white;
+        text-decoration: none;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+        text-transform: uppercase;
+        &:hover, &:focus {
+          color: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+  z-index: 3;
+  nav {
+    -moz-perspective: 300px;
+    ul {
+      opacity: 0.4;
+      -webkit-transform: translateY(-25%) rotateX(35deg);
+      transform: translateY(-25%) rotateX(35deg);
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+  }
+}
+
+#op {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  &:checked ~ .overlay-hugeinc {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  &:checked ~ .overlay-hugeinc nav ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  &:not(:checked) ~ .overlay-hugeinc nav ul {
+    -webkit-transform: translateY(25%) rotateX(-35deg);
+    transform: translateY(25%) rotateX(-35deg);
+  }
+}

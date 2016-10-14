@@ -1,0 +1,61 @@
+@import "variables";
+
+.btn {
+  padding: 6px 12px 4px;
+  font-size: 15px;
+  transition: .2s all ease-out;
+}
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background: #fff;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: $brand-primary;
+  }
+  i.glyphicon {
+    top: 2px;
+  }
+}
+.btn-secondary {
+  background: $brand-secondary;
+  color: #fff;
+  &:hover {
+    background: darken($brand-secondary, 10%);
+    color: #fff;
+  }
+}
+.btn-separated {
+  display: flex;
+  background: $brand-secondary;
+  transition: .2s all ease-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background: lighten($brand-secondary, 5%);
+  }
+  span {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 10px 7px;
+    &:last-child {
+      border-left: 3px solid $brand-primary;
+      flex-grow: 0;
+      width: 40px;
+      top: 0;
+      &::before {
+        font-size: 15px;
+        margin-left: -3px;
+      }
+    }
+  }
+}
+.btn-large {
+  font-weight: 300;
+  font-size: 20px;
+}

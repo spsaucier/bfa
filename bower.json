@@ -1,0 +1,32 @@
+{
+  "name": "bfa",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "html5-placeholder-polyfill": "^2.1.0",
+    "magnific-popup": "^1.1.0",
+    "jquery-data-parallax": "^0.1.20",
+    "hyperform": "^0.8.8",
+    "scrollreveal": "^3.3.2",
+    "formatter.js": "formatter#^0.1.5"
+  },
+  "overrides": {
+    "scrollreveal": {
+      "main": [
+        "dist/scrollreveal.min.js"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
+}
