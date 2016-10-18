@@ -152,6 +152,7 @@ $font-size-medium: 39px;
   position: relative;
   z-index: 1;
   padding: 200px 0 11%;
+  text-align: center;
   @media (max-width: $screen-sm-max) {
     padding: 95px 0 5%;
   }
@@ -181,13 +182,18 @@ $font-size-medium: 39px;
   }
   .btn-primary {
     color: #fff;
+    font-size: 20px;
+    border-radius: 0;
   }
   h2 {
     font-size: 45px;
   }
-  // p {
-  //   text-align: center;
-  // }
+  small {
+    font-size: 11px;
+  }
+  p {
+    margin-bottom: 1em;
+  }
 }
 
 .blue-section {
@@ -204,6 +210,15 @@ $font-size-medium: 39px;
   }
   p {
     margin-bottom: 35px;
+  }
+  input[type=email] {
+    padding: 11px 13px;
+    height: 40px;
+  }
+  .btn {
+    @media(max-width: $screen-sm-max) {
+      width: 100%;
+    }
   }
 }
 
@@ -356,10 +371,17 @@ $font-size-medium: 39px;
 }
 
 .mfp-content {
-  max-width: 700px;
+  max-width: 740px;
   margin: 0 auto;
   background: $brand-primary;
   color: #fff;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  hr {
+    border-color: #fff;
+  }
   .container-fluid {
     padding: 40px 60px;
     @media (max-width: 499px) {

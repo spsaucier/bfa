@@ -1,0 +1,56 @@
+
+<mjml>
+  <mj-body>
+    <mj-container background-color="#d7dde5">
+      <mj-section background-color="#1b75ba" full-width="full-width">
+        <mj-column width="33.33333333333333%" vertical-align="middle">
+          <mj-image src="http://www2.baseballforall.com/images/bfa.png" alt="Baseball For All" padding-bottom="0" padding-top="10">
+
+          </mj-image>
+        </mj-column>
+        <mj-column width="66.66666666666666%" vertical-align="middle">
+          <mj-text align="center" link-color="#ffffff" color="#ffffff" padding-bottom="0" padding-top="10" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif">
+            <a href="http://baseballforall.com/about-ewdpu" style="text-decoration: none; color: inherit;">ABOUT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/right-to-play" style="text-decoration: none; color: inherit;">RIGHT TO PLAY</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com" style="text-decoration: none; color: inherit;">CONTACT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/donate" style="text-decoration: none; color: inherit;">DONATE</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-url="http://www2.baseballforall.com/images/bg.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text align="center" font-size="14" color="#ffffff" padding-top="95" padding-bottom="95">
+            <span font-family="Roboto, Helvetica, Arial, sans-serif" style="font-size: 45px; line-height: 45px;">THANK YOU</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
+        <mj-column vertical-align="top" width="66.66666666666666%">
+          <mj-text align="left" color="#1b75ba" font-size="15" padding-bottom="15" padding-top="30" font-family="Noto Serif, Georgia, serif" padding-bottom="30">
+            <span style="font-size: 17px; line-height: 28px">Baseball is the greatest game in the world, and everyone should be able to play. That’s the reason I started Baseball for All, and I’m so grateful you are helping our movement grow. Keep an eye out for upcoming news, events and local ways to help get more girls in the game.</span><br>
+            -----<br>
+            Justine Siegal<br>
+            Founder of Baseball for All and first woman to coach for Major League Baseball
+          </mj-text>
+        </mj-column>
+        <mj-column vertical-align="top" width="33.33333333333333%">
+          <mj-image src="https://s16.postimg.org/mwoehp9rp/justine.jpg" alt="" padding-bottom="0" padding-top="30"></mj-image>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#1b75ba" vertical-align="middle" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-button align="center" background-color="#ffffff" color="#1b75ba" border-radius="0px" font-size="18" href="http://baseballforall.com/donate" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="10" padding-top="20">
+            DONATE NOW
+          </mj-button>
+          <mj-divider border-color="#fff" border-style="solid" border-width="1px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20"></mj-divider>
+          <mj-text align="center" color="#ffffff" font-size="17" padding-bottom="10" padding-top="20" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif">
+            Join The Movement &nbsp;&#xA0;&#xA0;&#xA0;
+            <a href="https://www.instagram.com/baseballforall/" rel="nofollow" target="_blank"><img width="20" src="http://www.iconsdb.com/icons/preview/white/instagram-xl.png" alt="Instagram"/></a>&#xA0;&#xA0;&#xA0;
+            <a href="https://www.facebook.com/baseballforall" rel="nofollow" target="_blank"><img width="20" src="http://www.iconsdb.com/icons/preview/white/facebook-xl.png" alt="Facebook"/></a>&#xA0;&#xA0;&#xA0;
+            <a href="https://twitter.com/baseballfor_all" rel="nofollow" target="_blank"><img width="20" src="http://www.iconsdb.com/icons/preview/white/twitter-xl.png" alt="Twitter"/></a>
+          </mj-text>
+          <mj-text align="center" color="#ffffff" font-size="11" padding-bottom="25" padding-top="20" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif">
+            &copy; 2016 Baseball for All
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

@@ -107,7 +107,7 @@ jQuery(function(){
 			dataType: 'json',
 			data: $(this).serialize(),
 			success: function(data) {
-				$(that).find('.form').hide()
+				$(that).find('.to-hide').hide()
 				.next().show();
 			}
 		});

@@ -142,7 +142,7 @@
     text-align: center;
     position: relative;
     top: 50%;
-    height: 60%;
+    height: 75%;
     font-size: 36px;
     font-size: 7vh;
     -webkit-transform: translateY(-50%);
@@ -157,8 +157,8 @@
     position: relative;
     li {
       display: block;
-      height: 20%;
-      height: calc(100% / 5);
+      height: 15%;
+      height: calc(100% / 7);
       min-height: 54px;
       a {
         font-weight: 300;
