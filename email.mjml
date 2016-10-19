@@ -10,7 +10,7 @@
         </mj-column>
         <mj-column width="66.66666666666666%" vertical-align="middle">
           <mj-text align="center" link-color="#ffffff" color="#ffffff" padding-bottom="0" padding-top="10" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif">
-            <a href="http://baseballforall.com/about-ewdpu" style="text-decoration: none; color: inherit;">ABOUT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/right-to-play" style="text-decoration: none; color: inherit;">RIGHT TO PLAY</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com" style="text-decoration: none; color: inherit;">CONTACT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/donate" style="text-decoration: none; color: inherit;">DONATE</a>
+            <a href="http://baseballforall.com/about-ewdpu" style="text-decoration: none; color: inherit;">ABOUT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/right-to-play" style="text-decoration: none; color: inherit;">RIGHT TO PLAY</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com" style="text-decoration: none; color: inherit;">CONTACT</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://baseballforall.com/donate" style="text-decoration: none; color: inherit;">DONATE</a>
           </mj-text>
         </mj-column>
       </mj-section>
