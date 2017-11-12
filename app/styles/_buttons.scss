@@ -41,10 +41,12 @@
     font-size: 20px;
     font-weight: 300;
     text-align: center;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     padding: 10px 10px 7px;
     &:last-child {
       border-left: 3px solid $brand-primary;
+      -webkit-flex-grow: 0;
       flex-grow: 0;
       width: 40px;
       top: 0;

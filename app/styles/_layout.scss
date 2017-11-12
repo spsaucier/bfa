@@ -1,9 +1,22 @@
 .serif {
   font-family: $font-family-serif;
+  letter-spacing: 0.03em;
 }
 p.serif {
   font-size: 17px;
   line-height: 1.65;
+}
+
+.show-for-small {
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.hide-for-small {
+  @media (max-width: 500px - 1) {
+    display: none;
+  }
 }
 
 hr {

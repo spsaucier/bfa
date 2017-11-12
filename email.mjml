@@ -2,6 +2,7 @@
 <mjml>
   <mj-body>
     <mj-container background-color="#d7dde5">
+      <mj-text background-color="#1b75ba" color="#1b75ba"><span style="display:none!important; font-size: 1px;">Thank You! Baseball is the greatest game in the world, and everyone should be able to play.</span></mj-text>
       <mj-section background-color="#1b75ba" full-width="full-width">
         <mj-column width="33.33333333333333%" vertical-align="middle">
           <mj-image src="http://www2.baseballforall.com/images/bfa.png" alt="Baseball For All" padding-bottom="0" padding-top="10">

@@ -15,6 +15,8 @@ $font-size-medium: 39px;
 
 .hero {
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 .video-bg {
   position: relative;
@@ -140,6 +142,7 @@ $font-size-medium: 39px;
           display: flex;
           flex-direction: column;
           .serif {
+            -webkit-flex-grow: 1;
             flex-grow: 1;
           }
         }
@@ -172,7 +175,7 @@ $font-size-medium: 39px;
     padding-top: 0;
     padding-bottom: 74%;
     margin-bottom: -30%;
-    z-index: -1;
+    z-index: 0;
     &::before {
       display: none;
     }
@@ -199,6 +202,10 @@ $font-size-medium: 39px;
 .blue-section {
   background: $brand-primary;
   padding: 55px 0;
+  @media (max-width: $screen-sm-min - 1) {
+    position: relative;
+    z-index: 1;
+  }
   * {
     color: #fff;
   }
@@ -288,7 +295,7 @@ $font-size-medium: 39px;
     width: 100%;
     height: 100%;
     background: url(../images/overlay.gif) repeat center center / 4px;
-    opacity: 1;
+    opacity: 0;
   }
   .image {
     background: #4988b3 url(../images/blue-girls.jpg) no-repeat center center / cover;
@@ -409,6 +416,8 @@ $font-size-medium: 39px;
 }
 
 
+@font-face {font-family: 'DINNextLTPro';font-weight: 300;src: url('../fonts/325573_0_0.eot');src: url('../fonts/325573_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/325573_0_0.woff2') format('woff2'),url('../fonts/325573_0_0.woff') format('woff'),url('../fonts/325573_0_0.ttf') format('truetype');}
+@font-face {font-family: 'DINNextLTPro';font-weight: 500;src: url('../fonts/325573_1_0.eot');src: url('../fonts/325573_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/325573_1_0.woff2') format('woff2'),url('../fonts/325573_1_0.woff') format('woff'),url('../fonts/325573_1_0.ttf') format('truetype');}
 @include font-face("Din", "../fonts/DINWeb", 500, normal, woff);
 @include font-face("Din", "../fonts/DINWeb-Ita", 500, italic, woff);
 @include font-face("Din", "../fonts/DINWeb-Black", 900, normal, woff);

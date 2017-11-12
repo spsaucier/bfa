@@ -49,13 +49,27 @@ jQuery(function(){
 	// Replace placeholder image with autoplaying video
 	$('a.vid-img').on('click', function (e) {
 		e.preventDefault();
-		$(this).next().html('<iframe src="https://www.youtube.com/embed/V0xad8q061I?modestbranding=1&autoplay=true" frameborder="0" allowfullscreen></iframe>').show();
+		$(this).next().html('<iframe src="https://www.youtube.com/embed/pEl8HCZgmtk?modestbranding=1&rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>').show();
 		$(this).hide();
 	});
 
 	// Modal Popups
 	$('.popup-yt').magnificPopup({
-		type:'iframe'
+		type:'iframe',
+		iframe: {
+			markup: '<div class="mfp-iframe-scaler">'+
+			            '<div class="mfp-close"></div>'+
+			            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+			          '</div>',
+
+			patterns: {
+			    youtube: {
+					index: 'youtube.com/',
+					id: 'v=',
+					src: '//www.youtube.com/embed/%id%?modestbranding=1&rel=0&showinfo=0&autoplay=1'
+			    }
+			}
+		}
 	});
 
 	$('.popup-form').magnificPopup({
