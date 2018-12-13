@@ -15,6 +15,33 @@
       margin-top: 9px;
     }
     li {
+      position: relative;
+      ul {
+        display: none;
+        background: $brand-primary;
+        box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        padding: 10px 0;
+        list-style: none;
+        width: 130px;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        margin-right: -65px;
+        li {
+          a {
+            margin-left: 0;
+            padding: 2px 5px;
+            display: inline-block;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &:hover ul {
+        display: block;
+      }
       a {
         color: $navbar-default-link-color;
         padding: 6px 11px 4px;
@@ -142,11 +169,13 @@
     text-align: center;
     position: relative;
     top: 50%;
-    height: 70%;
+    min-height: 40%;
+    max-height: 100%;
     font-size: 30px;
     font-size: 5vh;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    overflow: auto;
   }
   ul {
     list-style: none;
@@ -157,9 +186,16 @@
     position: relative;
     li {
       display: block;
-      height: 15%;
-      height: calc(100% / 9);
-      min-height: 54px;
+      min-height: 11.111111%;
+      ul {
+        display: none;
+        position: relative;
+        li {
+          a {
+            font-size: 0.6em;
+          }
+        }
+      }
       a {
         font-weight: 300;
         display: block;

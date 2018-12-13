@@ -127,6 +127,10 @@ jQuery(function(){
 		});
 	});
 
+	$('a[href="#"]').on('click', function (e) {
+		$(this).next('ul').slideToggle();
+		e.preventDefault();
+	});
 
 	// Fixed menu
 	function setMenu() {
